@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyMap</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <div id="MainSpace">
+        <img id = "MainImg"src="Imagem.png" alt="foto do corpo principal" usemap="#PointBody">
+       
+    <map name="PointBody" >
+        <area shape="circle" coords="286,528,20" href="Infobody.html#calf" target="infoFrame" alt="calf">
+        <area shape="circle" coords="278,375,21" href="Infobody.html#quadriceps" target="infoFrame" alt="quadriceps">
+        <area shape="circle" coords="234,230,20" href="Infobody.html#abdomen" target="infoFrame" alt="abdomen">
+        <area shape="circle" coords="118,250,20" href="Infobody.html#forearm" target="infoFrame" alt="forearm">
+        <area shape="circle" coords="233,105,20" href="Infobody.html#neck" target="infoFrame" alt="neck">
+        <area shape="circle" coords="206,169,20" href="Infobody.html#chest" target="infoFrame" alt="chest">
+        <area shape="circle" coords="146,183,20" href="Infobody.html#biceps" target="infoFrame" alt="biceps">
+        <area shape="circle" coords="158,125,20" href="Infobody.html#shoulder" target="infoFrame" alt="shoulder">
+    </map>
+     <iframe src="Infobody.html" frameborder="0" name="infoFrame" id="IframeText"></iframe>
+    </div>
+
+    <div id="popup" >
+        <div id="title">
+           <p>Aarked </p> 
+        </div>
+        <img id = "imgPop-up"src="PointOfImg.PNG" alt="corpo humano">
+        <button id="close">x</button>
+    </div>   
+</body>
+</html>

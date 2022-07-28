@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow: hidden;
+    background-color:rgb(3, 31, 79) ;
+}
+p{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    grid-area: texto;
+}
+#imgPop-up{
+    width: 100%;
+    height: 86%;
+    border-radius: 0 0 10px 10px ;
+    grid-area: img; 
+    justify-self: center;
+}
+#close{
+    grid-area: close;
+    cursor: pointer;
+}
+#close:hover{
+    background: red;
+    color: white;
+}
+#popup{
+    display: grid;
+    grid-template-columns: 2fr 30px;
+    grid-template-rows: 2fr 530px;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+
+    top:16%;
+    left:30% ;
+
+    background: rgb(52, 52, 52);
+    border: 5px solid rgb(162, 162, 162);
+    border-radius:10px ;
+    text-align: center;
+    grid-template-areas:
+    "texto close"
+    "img img" ;
+}
+#title{
+    border-bottom: 3px solid gray;
+}
+#MainSpace{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#MainImg{
+    height: 100%;
+    border: 3px dotted white;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+#IframeText{
+    border-radius: 0 0 10px 10px;
+    width: 50%;
+    height: 30%;
+    background-color: white;
+    
+}
